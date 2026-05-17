@@ -1,0 +1,1 @@
+export default function VoicePage { return ( <div className='min-h-screen bg-[#f8fafc] pt-32'><div className='container mx-auto px-4'><h1 className='text-4xl font-bold text-[#0f172a]'>VoicePage</h1><p className='text-[#64748b] mt-4'>Coming soon...</p></div></div>); }
