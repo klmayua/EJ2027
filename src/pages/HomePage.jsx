@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom'
-import { PlayArrow, ArrowForward, VolunteerActivism, Groups, RecordVoiceOver, Verified, AccountBalance, Message, TrendingFlat } from '@material-symbols-svg/react/outlined'
+import { PlayArrow, ArrowForward, VolunteerActivism, Groups, RecordVoiceOver, Verified, AccountBalance, Message, TrendingFlat, LocationOn, Diversity3, Celebration } from '@material-symbols-svg/react/outlined'
 import { useAnalytics } from '../analytics'
+import { heroHeadlines, heroSubheadlines } from '../content/homepage/hero'
+import { trustSignals } from '../content/trust/signals'
+import { identity } from '../content/biography/identity'
 
 export default function HomePage() {
   const { trackJoinClick } = useAnalytics()
+
+  const getHeadline = () => heroHeadlines.recognition[0]
+  const getSubheadline = () => heroSubheadlines[0]
   
   return (
     <>
@@ -30,14 +36,12 @@ export default function HomePage() {
             </div>
             
             <h1 className="font-h1 text-4xl md:text-5xl lg:text-6xl text-white mb-6 leading-tight">
-              From National Voice <br/>
-              <span className="text-[#93c5fd]">To Public Service</span>
+              {getHeadline()}
             </h1>
-            
+
             <p className="text-lg md:text-xl text-white/80 mb-8 max-w-[540px] leading-relaxed">
-              For 15 years, my voice connected with millions across Nigeria. 
-              Now I'm asking for the chance to serve — not from the outside, 
-              but from within.
+              {getSubheadline()} For 15 years, his voice connected with millions across Nigeria.
+              Now he's asking for the chance to serve — not from the outside, but from within.
             </p>
             
             <div className="flex flex-wrap items-center gap-4">
@@ -98,6 +102,67 @@ export default function HomePage() {
                 We can't change from the outside. I'm asking for the chance 
                 to serve from within — not as a politician, but as a servant.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* COMMUNITY CONNECTION - IDEATO OWNERSHIP */}
+      <section className="py-16 md:py-24 bg-[#07141f]">
+        <div className="container mx-auto px-4 md:px-8 max-w-[1440px]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div>
+              <span className="text-[#D4AF37] font-label-caps uppercase tracking-widest mb-4 block">From Ideato, For Ideato</span>
+              <h2 className="font-h2 text-3xl md:text-4xl text-white mb-6">
+                Born In Ideato.<br/>
+                <span className="text-[#D4AF37]">Built For Ideato.</span><br/>
+                Now Fighting For Ideato.
+              </h2>
+              <p className="text-white/70 text-lg mb-6 leading-relaxed">
+                Obom Aruogu, Umuobom town — {identity.origin.town}. That's where it started.
+                That's never been forgotten.
+              </p>
+              <p className="text-white/60 mb-8">
+                "He carried our voice to the nation. Now he returns to carry our voice in government."
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div className="flex items-start gap-3">
+                  <LocationOn className="w-5 h-5 text-[#D4AF37] flex-shrink-0 mt-1" />
+                  <div>
+                    <div className="text-white font-semibold">Ideato South</div>
+                    <div className="text-white/50 text-sm">Birthplace</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Diversity3 className="w-5 h-5 text-[#D4AF37] flex-shrink-0 mt-1" />
+                  <div>
+                    <div className="text-white font-semibold">Imo State</div>
+                    <div className="text-white/50 text-sm">Roots</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Celebration className="w-5 h-5 text-[#D4AF37] flex-shrink-0 mt-1" />
+                  <div>
+                    <div className="text-white font-semibold">Nigeria</div>
+                    <div className="text-white/50 text-sm">Reach</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="aspect-[4/3] rounded-2xl overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80"
+                  alt="Community gathering"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#07141f] via-transparent to-transparent" />
+              </div>
+              <div className="absolute -bottom-6 -right-6 bg-[#D4AF37] text-black px-6 py-4 rounded-xl max-w-xs">
+                <p className="font-semibold text-sm">"Not just from Ideato. For Ideato."</p>
+              </div>
             </div>
           </div>
         </div>
