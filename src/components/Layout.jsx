@@ -33,8 +33,6 @@ const socialLinks = [
 const navLinks = [
   { to: '/', label: 'Arena' },
   { to: '/about', label: 'About' },
-  { to: '/initiatives', label: 'Initiatives' },
-  { to: '/leadership', label: 'Leadership' },
   { to: '/media', label: 'Media' },
   { to: '/community', label: 'Community' },
 ]
@@ -78,9 +76,9 @@ function Navbar() {
             ))}
           </nav>
           <div className="flex items-center">
-            <Link to="/join" className="hidden md:inline-flex bg-[#16A34A] text-white px-6 md:px-8 py-3 md:py-4 rounded font-label-caps text-sm hover:brightness-110 transition-all items-center gap-2">
+            <Link to="/volunteer" className="hidden md:inline-flex bg-[#16A34A] text-white px-6 md:px-8 py-3 md:py-4 rounded font-label-caps text-sm hover:brightness-110 transition-all items-center gap-2">
               <Heart className="w-5 h-5" />
-              <span>Volunteer</span>
+              <span>Get Involved</span>
             </Link>
             <button 
               className="md:hidden w-12 h-12 flex items-center justify-center text-white hover:bg-white/10 rounded-lg transition-colors"
@@ -114,13 +112,13 @@ function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <Link 
-                to="/join" 
-                onClick={() => setMobileMenuOpen(false)}
-                className="bg-[#16A34A] text-white px-6 py-4 rounded font-label-caps text-base text-center mt-2"
-              >
-                Join as Volunteer
-              </Link>
+               <Link 
+                 to="/volunteer" 
+                 onClick={() => setMobileMenuOpen(false)}
+                 className="bg-[#16A34A] text-white px-6 py-4 rounded font-label-caps text-base text-center mt-2"
+               >
+                 Get Involved
+               </Link>
             </nav>
           </div>
         </div>
@@ -139,9 +137,9 @@ function Footer() {
       <div className="max-w-[1440px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           <div className="lg:col-span-1">
-            <div className="text-[#D4AF37] font-bold text-lg md:text-xl mb-4 font-['Sora']">CITY BOY ARENA</div>
+            <div className="text-[#D4AF37] font-bold text-lg md:text-xl mb-4 font-['Sora']">EJ THE VOICE</div>
             <p className="text-[#94A3B8] text-sm tracking-wide mb-6 max-w-sm leading-relaxed">
-              Nigeria's premier platform for nation-building, trust-anchored infrastructure, and digital civic engagement.
+              Ejike Ibedilo — serving Ideato North and Ideato South with transparency, accountability, and heart.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (
@@ -183,7 +181,7 @@ function Footer() {
           </div>
         </div>
         <div className="mt-10 pt-6 border-t border-[rgba(255,255,255,.08)] flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-[#94A3B8] text-xs text-center md:text-left">© 2027 THE VOICE Campaign. Ejike Ibedilo for Ideato North/South.</p>
+          <p className="text-[#94A3B8] text-xs text-center md:text-left">© 2026 Ejike Ibedilo — Ideato North/South</p>
           <div className="flex flex-wrap gap-4 justify-center md:justify-end">
             <Link to="/trust" className="text-[#94A3B8] hover:text-[#D4AF37] text-xs transition-colors">Privacy Protocol</Link>
             <Link to="/governance" className="text-[#94A3B8] hover:text-[#D4AF37] text-xs transition-colors">Terms of Service</Link>

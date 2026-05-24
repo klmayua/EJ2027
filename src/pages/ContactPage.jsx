@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowBack, PlayArrow, Email, Phone, LocationOn } from '@material-symbols-svg/react/outlined'
+import { ArrowBack, Mail, Call, LocationOn } from '@material-symbols-svg/react/outlined'
 
 export default function ContactPage() {
   return (
@@ -19,14 +19,14 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-12 h-12 rounded-full bg-[#3b82f6]/10 flex items-center justify-center mx-auto mb-4">
-                <Email className="w-6 h-6 text-[#3b82f6]" />
+                <Mail className="w-6 h-6 text-[#3b82f6]" />
               </div>
               <h3 className="font-semibold text-[#0f172a] mb-2">Email</h3>
               <p className="text-[#64748b]">contact@thevoice.org</p>
             </div>
             <div className="text-center">
               <div className="w-12 h-12 rounded-full bg-[#3b82f6]/10 flex items-center justify-center mx-auto mb-4">
-                <Phone className="w-6 h-6 text-[#3b82f6]" />
+                <Call className="w-6 h-6 text-[#3b82f6]" />
               </div>
               <h3 className="font-semibold text-[#0f172a] mb-2">Phone</h3>
               <p className="text-[#64748b]">+234 XXX XXX XXXX</p>

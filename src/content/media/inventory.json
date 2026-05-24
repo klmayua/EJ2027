@@ -1,0 +1,172 @@
+{
+  "media_inventory": {
+    "version": "1.0",
+    "date": "2026-05-18",
+    "source": "C:/Users/hp/Desktop/KLM2026/EJ2027/Photos",
+    "status": "INITIAL_CATALOG",
+    "total_photos": 3
+  },
+  "categories": {
+    "national_recognition": {
+      "label": "National Recognition",
+      "description": "Images showing national presence and media appearances",
+      "priority": 1,
+      "photos": []
+    },
+    "broadcasting_history": {
+      "label": "Broadcasting History",
+      "description": "Radio, TV, and media work documentation",
+      "priority": 2,
+      "photos": []
+    },
+    "public_speaking": {
+      "label": "Public Speaking",
+      "description": "Speeches, addresses, and public engagements",
+      "priority": 3,
+      "photos": []
+    },
+    "constituency_presence": {
+      "label": "Constituency Presence",
+      "description": "Ideato community engagement and presence",
+      "priority": 4,
+      "photos": []
+    },
+    "candid_humanization": {
+      "label": "Candid Humanization",
+      "description": "Human moments, family, informal settings",
+      "priority": 5,
+      "photos": []
+    },
+    "media_appearances": {
+      "label": "Media Appearances",
+      "description": "Press, interviews, and media coverage",
+      "priority": 6,
+      "photos": []
+    },
+    "event_presence": {
+      "label": "Event Presence",
+      "description": "Events, galas, ceremonies attended",
+      "priority": 7,
+      "photos": []
+    },
+    "interviews": {
+      "label": "Interviews",
+      "description": "Television and radio interviews",
+      "priority": 8,
+      "photos": []
+    },
+    "podcasts": {
+      "label": "Podcasts",
+      "description": "Podcast appearances and digital media",
+      "priority": 9,
+      "photos": []
+    },
+    "trust_signals": {
+      "label": "Trust Signals",
+      "description": "Images that build credibility and trust",
+      "priority": 10,
+      "photos": []
+    }
+  },
+  "raw_assets": [
+    {
+      "id": "raw_001",
+      "filename": "EJike_agbada_01.jpeg",
+      "path": "Photos/EJike_agbada_01.jpeg",
+      "status": "UNCLASSIFIED",
+      "ai_tags": ["formal", "agbada", "traditional", "leadership"],
+      "proposed_category": "trust_signals",
+      "notes": "Formal agbada portrait — strong trust signal"
+    },
+    {
+      "id": "raw_002",
+      "filename": "Ejike_agbada.jpeg",
+      "path": "Photos/Ejike_agbada.jpeg",
+      "status": "UNCLASSIFIED",
+      "ai_tags": ["formal", "agbada", "traditional"],
+      "proposed_category": "national_recognition",
+      "notes": "Second agbada image — needs deduplication check"
+    },
+    {
+      "id": "raw_003",
+      "filename": "nigerian_flag.png",
+      "path": "Photos/nigerian_flag.png",
+      "status": "UTILITY_ASSET",
+      "ai_tags": ["flag", "national", "identity"],
+      "proposed_category": "utility",
+      "notes": "Flag asset for overlays — do not display as primary"
+    }
+  ],
+  "gaps_identified": [
+    "No broadcasting/radio images",
+    "No BBNaija or TV images",
+    "No Nollywood/film images",
+    "No event/gala images",
+    "No candid/family images",
+    "No community/ constituency visit images",
+    "No interview images",
+    "No public speaking images",
+    "No archival historical images",
+    "No documentary footage"
+  ],
+  "priority_acquisitions": [
+    {
+      "priority": 1,
+      "category": "broadcasting_history",
+      "description": "Cool FM or radio broadcast imagery",
+      "use": "Hero section, About page"
+    },
+    {
+      "priority": 2,
+      "category": "media_appearances",
+      "description": "BBNaija or major TV appearance",
+      "use": "Timeline, Trust section"
+    },
+    {
+      "priority": 3,
+      "category": "candid_humanization",
+      "description": "Family, informal, human moments",
+      "use": "About page, Community section"
+    },
+    {
+      "priority": 4,
+      "category": "constituency_presence",
+      "description": "Ideato community visits or events",
+      "use": "Community page"
+    },
+    {
+      "priority": 5,
+      "category": "public_speaking",
+      "description": "Guest of honour or speeches",
+      "use": "Media page, Timeline"
+    }
+  ],
+  "selection_rules": {
+    "prioritize": [
+      "emotional_realism",
+      "authenticity",
+      "warmth",
+      "trust",
+      "recognizability"
+    ],
+    "avoid": [
+      "overedited_images",
+      "fake_campaign_staging",
+      "excessive_graphics",
+      "artificial_posters",
+      "stock_image_energy"
+    ]
+  },
+  "responsive_strategy": {
+    "thumbnail_sizes": [400, 800, 1200],
+    "format": "webp_primary_jpeg_fallback",
+    "lazy_loading": true,
+    "low_bandwidth_optimization": true
+  },
+  "naming_convention": {
+    "pattern": "{category}-{descriptor}-{index}",
+    "example": "broadcasting-cool-fm-01.webp",
+    "lowercase": true,
+    "hyphen_separated": true
+  }
+}
